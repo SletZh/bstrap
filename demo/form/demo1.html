@@ -1,0 +1,84 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="../../css/fileinput/fileinput.css">
+    <link rel="stylesheet" href="../../css/fileinput/theam.css">
+    <style type="text/css">
+        table#feedbackTable td input{
+            width: 100%;
+        }
+        span.note{
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+    <script type="text/javascript" src="../../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../../js/bootstrap.js"></script>
+    <script type="text/javascript" src="../../js/form/fileinput/fileinput.js"></script>
+    <script type="text/javascript" src="../../js/form/fileinput/prexif.js"></script>
+    <script type="text/javascript" src="../../js/form/fileinput/sortable.js"></script>
+    <script type="text/javascript" src="../../js/form/fileinput/theam.js"></script>
+    <title>my first form app</title>
+</head>
+<body>
+<div id="feedbackDiv">
+<form enctype="multipart/form-data" action="http://localhost:27827/cnlp-server/iTSMSupport/submit" method="post">
+  <table id="feedbackTable">
+      <tr style="text-align: right">
+          <td class="col-md-1">反馈人邮箱<span class="note">*</span></td>
+          <td colspan="3"><input class="form-control" type="text"></td>
+      </tr>
+      <tr style="text-align: right">
+          <td class="col-md-1" style="width: 25%">反馈人姓名<span class="note">*</span></td>
+          <td style="width: 25%"><input class="form-control" type="text"></td>
+          <td class="col-md-1" style="width: 25%">反馈人电话<span class="note">*</span></td>
+          <td style="width: 25%"><input class="form-control" type="text"></td>
+      </tr>
+      <tr style="text-align: right">
+          <td class="col-md-1">报案号<span class="note">*</span></td>
+          <td colspan="3"><input class="form-control" type="text"></td>
+      </tr>
+      <tr style="text-align: right">
+          <td class="col-md-1">ITSM系统选择<span class="note">*</span></td>
+          <td colspan="3"><select class="form-control" style="width: 100%">
+              <option>财产险理赔系统2018版</option>
+              <option>意健险理赔系统2018版</option>
+          </select></td>
+      </tr>
+      <tr style="text-align: right">
+          <td class="col-md-1">主题<span class="note">*</span></td>
+          <td colspan="3"><input class="form-control" type="text"></td>
+      </tr>
+      <tr style="text-align: right">
+          <td class="col-md-1">正文<span class="note">*</span></td>
+          <td colspan="3"><textarea rows="3" class="form-control" style="width: 100%" placeholder="【填写示例：在xx页面下操作xx报错，报案号是xx，操作工号是xx，详情见截图】"></textarea>
+          </td>
+      </tr>
+      <tr style="text-align: right">
+          <td class="col-md-1">附件<span class="note">*</span></td>
+          <td colspan="3">
+             <input id="Image" name="Image" class="form-control" type="file" data-preview-file-type="text" multiple><span style="color:red;display: block;font-size: 70%;text-align: left">*文件、图片大小不大于1M</span></td>
+      </tr>
+      <tr style="text-align: right">
+          <td colspan="4"><button class="btn btn-primary" type="submit">提交</button></td>
+      </tr>
+  </table>
+
+</form>
+</div>
+</body>
+<script type="text/javascript">
+
+    $(document).on('ready', function () {
+        $('#Image').fileinput({
+            theme: 'explorer',
+            //uploadUrl: 'https://www.baidu.com',
+            //allowedFileExtensions: ['jpg', 'png', 'gif'],
+            //maxFileSize: 1000,
+            //maxFilesNum: 5,
+        });
+    });
+</script>
+</html>

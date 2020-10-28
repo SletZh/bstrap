@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e60a848e-4823-4a11-a7f5-032163cf2545" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1jJHILVoZGkNzajnQVxsX6vkmV9" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/img" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\bootstrap\FormDemo1\img" />
+      <recent name="F:\bootstrap\FormDemo1" />
+      <recent name="F:\bootstrap\FormDemo1\js" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\Slet\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e60a848e-4823-4a11-a7f5-032163cf2545" name="Default Changelist" comment="" />
+      <created>1603515193670</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1603515193670</updated>
+      <workItem from="1603515198657" duration="7801000" />
+      <workItem from="1603593199228" duration="4205000" />
+      <workItem from="1603674265581" duration="19036000" />
+      <workItem from="1603722390845" duration="1740000" />
+      <workItem from="1603760482902" duration="15479000" />
+      <workItem from="1603849101085" duration="4948000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/../fileinput-git" />
+    </ignored-roots>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="137" y="53" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603515973290">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state x="137" y="53" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.30.1366.738@0.30.1366.738" timestamp="1603515973290" />
+    <state x="413" y="145" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1603687940572">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state x="413" y="145" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.30.1366.738@0.30.1366.738" timestamp="1603687940572" />
+    <state x="92" y="122" width="1182" height="554" key="DirDiffDialog" timestamp="1603686334881">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state x="92" y="122" width="1182" height="554" key="DirDiffDialog/0.30.1366.738@0.30.1366.738" timestamp="1603686334881" />
+    <state x="148" y="118" key="FileChooserDialogImpl" timestamp="1603854041589">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state x="148" y="118" key="FileChooserDialogImpl/0.30.1366.738@0.30.1366.738" timestamp="1603854041589" />
+    <state x="184" y="43" key="SettingsEditor" timestamp="1603854020800">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state x="184" y="43" key="SettingsEditor/0.30.1366.738@0.30.1366.738" timestamp="1603854020800" />
+    <state x="339" y="180" key="run.anything.popup" timestamp="1603691481783">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state x="339" y="180" key="run.anything.popup/0.30.1366.738@0.30.1366.738" timestamp="1603691481783" />
+  </component>
+</project>

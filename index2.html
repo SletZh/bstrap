@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style type="text/css">
+    .contact_us_note {
+        width: 34px;
+        margin: 0 5px;
+        padding: 15px 10px 10px;
+        text-align: center;
+        background-color: #fff;
+        border-radius: 20px;
+        box-shadow: 0 0 8px rgba(67,164,252,.2);
+        position: relative;
+        top: -20px;
+        z-index: -1;
+        line-height: 20px;
+    }
+    .contact_us_circle>span {
+        color: #fff;
+        width: 44px;
+        height: 44px;
+        line-height: 44px;
+        border-radius: 20px;
+    }
+    .rainbow {
+        display: inline-block;
+        line-height: 1;
+        text-align: center;
+        position: relative;
+        font-style: unset;
+    }
+    .content {
+        float: left;
+        line-height: 30px;
+        margin-top: -3px;
+    }
+    .contact_us_content .content .txt {
+        color: #212529;
+        font-size: 13px;
+    }
+    .content .blue_txt {
+        color: #0668cd;
+        font-size: 13px;
+    }
+    .contact_us_content .time {
+        text-align-last: justify;
+        white-space: nowrap;
+        color: #666;
+        font-size: 13px;
+        padding-right: 20px;
+    }
+    .contact_us_content .icon {
+        float: left;
+        width: 50px;
+        padding-left: 20px;
+        padding-top: 5px;
+    }
+    .contact_us_detail>.contact_us_content {
+        padding-bottom: 5px;
+        height: auto;
+        display: inline-block;
+        margin-top: 0;
+    }
+    </style>
+    <script type="text/javascript">
+        function close_contact_us_detail(){
+            $('#contact_us_detail').hide();
+        }
+        function open_contact_us_detail(){
+            $('#contact_us_detail').show();
+        }
+    </script>
+</head>
+<body>
+    <div style="display: block; transform: translate3d(0px, 0px, 0px); left: 1180px; top: 210px; width: 44px; height: 175px; right: auto; bottom: auto; margin: 0px; position: absolute; cursor: move;">
+        <div class="contact_us">
+            <div class="contact_us_circle">
+                <span class="rainbow"><a onmouseover="open_contact_us_detail()"><img src="img/form/contat_us0.png"></a></span>
+            </div>
+            <div class="contact_us_note">
+                <span style="display: block">联系我们</span>
+            </div>
+        </div>
+        <div id="contact_us_detail" class="contact_us_detail" style="position: absolute; padding: 5px; background: rgb(255, 255, 255); left: -330px; top: 0px;" hidden>
+            <div class="contact_us_title_wrap">
+                <span class="rainbow close"><a onclick="close_contact_us_detail()">&times;</a> </span>
+            </div>
+            <div class="contact_us_content">
+                <div id="contact_us_content1" style="background: rgb(255, 255, 255);" class="contact_us_content">
+                    <div class="icon">
+                        <span class="rainbow glyphicon glyphicon-earphone"></span>
+                    </div>
+                    <div class="content">
+                        <div class="txt">热线电话</div>
+                        <div class="blue_txt"><div>021-68579099</div></div>
+                        <div class="txt">工作日时间</div>
+                        <div class="time">
+                            <span style="padding-right: 20px;">上午&nbsp;8:30-12:00</span><span>下午&nbsp;13:30-19:00</span>
+                        </div>
+                        <div class="txt">非工作日时间</div>
+                        <div class="time">
+                            <span style="padding-right: 20px;">上午&nbsp;9:30-12:00</span><span>下午&nbsp;13:30-17:00</span>
+                        </div>
+                    </div>
+                </div>
+                <div id="contact_us_content2" style="background: rgb(255, 255, 255);" class="contact_us_content">
+                    <div class="icon">
+                        <span class="rainbow glyphicon glyphicon-headphones"></span>
+                    </div>
+                    <div class="content">
+                        <div class="content">
+                            <div class="txt"><a href="http://10.1.111.99:26193/ddbxIM/webchat.html?Q2hhbm5lbFR5cGU9d2ViY2hhdCZSb2xlPTImYXBwaWQ9SkRZSVRTdXBwb3J0JmRlcHQ9aHI=" target="_blank">在线客服</a></div>
+                            <div class="time">智能诊断, 秒级解答</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
