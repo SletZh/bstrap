@@ -1,0 +1,95 @@
+/*ITSM-智能客服css文件*/
+.contact_us_note {
+    width: 34px;
+    margin: 0 5px;
+    padding: 15px 10px 10px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 8px rgba(67, 164, 252, .2);
+    position: relative;
+    top: -15px;
+    z-index: -1;
+    line-height: 20px;
+}
+
+.contact_us_circle {
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    background-color: #0668cc;
+    border-radius: 44px;
+    box-shadow: 0 0 8px rgba(67, 164, 252, .2);
+}
+
+.contact_us_circle > span {
+    color: #fff;
+    width: 44px;
+    height: 44px;
+    line-height: 44px;
+    border-radius: 20px;
+}
+
+.rainbow {
+    display: inline-block;
+    line-height: 1;
+    text-align: center;
+    position: relative;
+    font-style: unset;
+}
+
+.content {
+    float: left;
+    line-height: 30px;
+    margin-top: -2px;
+}
+
+.contact_us_content {
+    line-height: 14px;
+    background-color: #fff;
+    width: 100%;
+}
+
+.contact_us_content .content .txt {
+    color: #212529;
+    font-size: 13px;
+}
+
+.content .blue_txt {
+    color: #0668cd;
+    font-size: 13px;
+}
+
+.contact_us_content .time {
+    text-align-last: justify;
+    white-space: nowrap;
+    color: #666;
+    font-size: 13px;
+    padding-right: 20px;
+}
+
+.contact_us_content .icon {
+    float: left;
+    width: 50px;
+    padding-left: 20px;
+    padding-top: 5px;
+}
+
+.contact_us_detail {
+    position: absolute;
+    padding: 5px;
+    background: rgb(255, 255, 255);
+    left: -330px;
+    top: 0px;
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, .15);
+    border-radius: 4px;
+    overflow: hidden;
+    width: 324px;
+}
+
+.contact_us_detail > .contact_us_content {
+    padding-bottom: 5px;
+    height: auto;
+    display: inline-block;
+    margin-top: 0;
+}

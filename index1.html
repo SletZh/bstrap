@@ -6,67 +6,54 @@
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <style type="text/css">
-/*设置文本与图片对齐*/
-       .img1{
-           vertical-align:middle;
-       }
-       .span1{
-           vertical-align:middle;
-       }
-
-       .p1{
-           margin-left: 40px;
-       }
-
-       #znkf{
-           margin-left: 600px;
-           margin-top: 200px;
-           position: absolute;
-           padding: 0;
-       }
-       #znkfindex{
-           margin-top: 200px;
-           margin-left: 850px;
-           position: absolute;
-       }
-    </style>
+    <link href="css/znkf.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="js/znkf.js"></script>
 </head>
 <body>
-<div id="znkf" style="width: 350px" class="modal"  hidden>
-    <div id="znkfmodal" style="width: 350px;" class="modal-dialog">
-        <div class="modal-content">
-<!--            <div class="modal-header">-->
-<!--                <button type="button" class="close" data-dismiss="modal">&times;</button>-->
-<!-- &times;特殊符号，x               -->
-<!--                <h4 class="modal-title">-->
-<!--                    标题-->
-<!--                </h4>-->
-<!--            </div>-->
-            <div id="znkfbody" class="modal-body">
-                <div><img class="img1" src="img/form/phone.png"><span class="span1" style="margin-left: 5px">热线电话</span><button type="button" class="close" data-dismiss="modal">&times;</button></div>
-                <p class="p1">021-68579099</p>
-                <p class="p1">工作日时间</p>
-                <p class="p1">上午8:30-12:00 下午13:30-19:00</p>
-                <p class="p1">非工作日时间</p>
-                <p class="p1">上午9:30-12:00 下午13:30-17:00</p>
-                <div><img class="img1" src="img/form/kf.png"><span class="span1" style="margin-left: 10px"><a href="http://10.1.111.99:26193/ddbxIM/webchat.html?Q2hhbm5lbFR5cGU9d2ViY2hhdCZSb2xlPTImYXBwaWQ9SkRZSVRTdXBwb3J0JmRlcHQ9aHI=" target="_blank">在线客服</a></span></div>
-                <p class="p1">智能诊断，秒级解答</p>
+    <div style="display: block; transform: translate3d(0px, 0px, 0px); left: 1180px; top: 210px; width: 44px; height: 175px; right: auto; bottom: auto; margin: 0px; position: absolute; cursor: move;">
+        <div class="contact_us">
+            <div class="contact_us_circle">
+                <span class="rainbow glyphicon glyphicon-earphone" onmouseover="open_contact_us_detail()"></span>
             </div>
-<!--            <div class="modal-footer">-->
-<!--                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>-->
-<!--                <button type="button" class="btn btn-primary">提交</button>-->
-<!--            </div>-->
+            <div class="contact_us_note">
+                <span style="display: block">联系我们</span>
+            </div>
+        </div>
+        <div id="contact_us_detail" class="contact_us_detail" onmouseleave="close_contact_us_detail()" hidden>
+            <div class="contact_us_title_wrap">
+                <span class="rainbow close"><a onclick="close_contact_us_detail()">&times;</a> </span>
+            </div>
+            <div class="contact_us_content">
+                <div id="contact_us_content1" style="background: rgb(255, 255, 255);" class="contact_us_content">
+                    <div class="icon">
+                        <span class="rainbow glyphicon glyphicon-earphone"></span>
+                    </div>
+                    <div class="content">
+                        <div class="txt">热线电话</div>
+                        <div class="blue_txt"><div>021-68579099</div></div>
+                        <div class="txt">工作日时间</div>
+                        <div class="time">
+                            <span style="padding-right: 20px;">上午&nbsp;8:30-12:00</span><span>下午&nbsp;13:30-19:00</span>
+                        </div>
+                        <div class="txt">非工作日时间</div>
+                        <div class="time">
+                            <span style="padding-right: 20px;">上午&nbsp;9:30-12:00</span><span>下午&nbsp;13:30-17:00</span>
+                        </div>
+                    </div>
+                </div>
+                <div id="contact_us_content2" style="background: rgb(255, 255, 255);" class="contact_us_content">
+                    <div class="icon">
+                        <span class="rainbow glyphicon glyphicon-headphones"></span>
+                    </div>
+                    <div class="content">
+                        <div class="content">
+                            <div class="txt"><a href="http://10.1.111.99:26193/ddbxIM/webchat.html?Q2hhbm5lbFR5cGU9d2ViY2hhdCZSb2xlPTImYXBwaWQ9SkRZSVRTdXBwb3J0JmRlcHQ9aHI=" target="_blank">在线客服</a></div>
+                            <div class="time">智能诊断, 秒级解答</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-</div>
-<div id="znkfindex" class="container">
-    <a data-toggle="modal" data-target="#znkf"><img src="img/form/contack_us.png"></a>
-</div>
 </body>
-<script type="text/javascript">
-    $(function (){
-        $('#znkf').modal('hidden');//与hidden同时使用
-    })
-</script>
 </html>

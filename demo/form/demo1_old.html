@@ -1,0 +1,118 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="../../css/fileinput/fileinput.css">
+    <link rel="stylesheet" href="../../css/fileinput/theam.css">
+    <style type="text/css">
+        table#feedbackTable td input{
+            width: 100%;
+            height: 75%;
+        }
+        table#feedbackTable{
+            font-family: 'Microsoft YaHei UI';
+            border-collapse: separate;
+            border-spacing: 0 0.5rem;
+        }
+        table#feedbackTable tr{
+            text-align: right;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+        .back{
+            background-color: #ecf4ff;
+            border: 1px solid #a4c4e5;
+        }
+        .back1{
+            border: 1px solid #a4c4e5
+        }
+        .txt{
+            color: #22272b;
+            font-size: 14px;
+            line-height: 14px;
+        }
+        .icon{
+            padding-left: 2px;
+            color: rgb(255, 85, 85);
+            transform: scale(0.5);
+            left: -3px;
+
+        }
+        .icon1{
+            padding-left: 3px;
+            transform: scale(0.7);
+            left: -6px;
+        }
+        .p1{
+            vertical-align: top;
+        }
+    </style>
+    <script type="text/javascript" src="../../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../../js/bootstrap.js"></script>
+    <script type="text/javascript" src="../../js/form/fileinput/fileinput.js"></script>
+    <script type="text/javascript" src="../../js/form/fileinput/prexif.js"></script>
+    <script type="text/javascript" src="../../js/form/fileinput/sortable.js"></script>
+    <script type="text/javascript" src="../../js/form/fileinput/theam.js"></script>
+    <title>my first form app</title>
+</head>
+<body>
+<div id="feedbackDiv">
+<!--
+表单提交
+<form enctype="multipart/form-data" action="http://localhost:27827/cnlp-server/iTSMSupport/submit" method="post">
+-->
+<form >
+  <table id="feedbackTable">
+      <tr>
+          <td class="col-md-1"><span class="txt">反馈人邮箱</span><span class="glyphicon glyphicon-certificate icon" data-toggle="tooltip" data-placement="top"  data-original-title="必填选项"></span></td>
+          <td colspan="3"><input class="form-control back" type="text"></td>
+      </tr>
+      <tr>
+          <td class="col-md-1" style="width: 25%"><span class="txt">反馈人姓名</span><span class="glyphicon glyphicon-certificate icon" data-toggle="tooltip" data-placement="top"  data-original-title="必填选项"></span></td>
+          <td style="width: 25%"><input class="form-control back" type="text"></td>
+          <td class="col-md-1" style="width: 25%"><span class="txt">反馈人电话</span><span class="glyphicon glyphicon-certificate icon" data-toggle="tooltip" data-placement="top"  data-original-title="必填选项"></span></td>
+          <td style="width: 25%"><input class="form-control back" type="text"></td>
+      </tr>
+      <tr>
+          <td class="col-md-1"><span class="txt">报案号</span><span class="glyphicon glyphicon-certificate icon" data-toggle="tooltip" data-placement="top"  data-original-title="必填选项"></span></td>
+          <td colspan="3"><input class="form-control back" type="text"></td>
+      </tr>
+      <tr>
+          <td class="col-md-1"><span class="txt">ITSM系统选择</span><span class="glyphicon glyphicon-certificate icon" data-toggle="tooltip" data-placement="top"  data-original-title="必填选项"></span></td>
+          <td colspan="3"><select class="form-control back" style="width: 100%;">
+              <option>财产险理赔系统2018版</option>
+              <option>意健险理赔系统2018版</option>
+          </select></td>
+      </tr>
+      <tr>
+          <td class="col-md-1"><span class="txt">主题</span><span class="glyphicon glyphicon-certificate icon" data-toggle="tooltip" data-placement="top"  data-original-title="必填选项"></span></td>
+          <td colspan="3"><input class="form-control back" type="text"></td>
+      </tr>
+      <tr>
+          <td class="col-md-1 p1"><span class="txt">正文</span><span class="glyphicon glyphicon-certificate icon" data-toggle="tooltip" data-placement="top"  data-original-title="必填选项"></span></td>
+          <td colspan="3"><textarea rows="5" maxlength="1000000000" data-auto-test="sysHelpMailTextarea" class="form-control back1" style="height: auto;resize: both;max-width: 100%;" placeholder="【填写示例：在xx页面下操作xx报错，报案号是xx，操作工号是xx，详情见截图】"></textarea>
+          </td>
+      </tr>
+      <tr>
+          <td class="col-md-1 p1"><span class="txt" style="color:#999;">附件</span> <span class="glyphicon glyphicon-question-sign icon1" ></span></td>
+          <td colspan="3">
+             <input id="Image" name="Image" class="form-control" type="file" multiple><span style="color:red;display: block;font-size: 70%;text-align: left">*文件、图片大小不大于1M</span></td>
+      </tr>
+      <tr>
+          <td colspan="4"><button class="btn btn-primary" type="submit">提交</button></td>
+      </tr>
+  </table>
+
+</form>
+</div>
+
+</body>
+<script type="text/javascript">
+
+    $(document).on('ready', function () {
+        $("[data-toggle='tooltip']").tooltip();//开启所有提示工具
+        $('#Image').fileinput({});
+    });
+</script>
+</html>
