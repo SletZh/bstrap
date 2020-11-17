@@ -1,10 +1,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="../../css/fileinput/fileinput.css">
-    <link rel="stylesheet" href="../../css/fileinput/theam.css">
+    <link rel="stylesheet" href="../../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="../../../css/fileinput/fileinput.css">
+    <link rel="stylesheet" href="../../../css/fileinput/theam.css">
     <style type="text/css">
         table#feedbackTable td input{
             width: 100%;
@@ -48,12 +48,12 @@
             vertical-align: top;
         }
     </style>
-    <script type="text/javascript" src="../../js/jquery.min.js"></script>
-    <script type="text/javascript" src="../../js/bootstrap.js"></script>
-    <script type="text/javascript" src="../../js/form/fileinput/fileinput.js"></script>
-    <script type="text/javascript" src="../../js/form/fileinput/prexif.js"></script>
-    <script type="text/javascript" src="../../js/form/fileinput/sortable.js"></script>
-    <script type="text/javascript" src="../../js/form/fileinput/theam.js"></script>
+    <script type="text/javascript" src="../../../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../../../js/bootstrap.js"></script>
+    <script type="text/javascript" src="../../../js/form/fileinput/fileinput.js"></script>
+    <script type="text/javascript" src="../../../js/form/fileinput/prexif.js"></script>
+    <script type="text/javascript" src="../../../js/form/fileinput/sortable.js"></script>
+    <script type="text/javascript" src="../../../js/form/fileinput/theam.js"></script>
     <title>my first form app</title>
 </head>
 <body>
@@ -97,7 +97,7 @@
       <tr>
           <td class="col-md-1 p1"><span class="txt" style="color:#999;">附件</span> <span class="glyphicon glyphicon-question-sign icon1" ></span></td>
           <td colspan="3">
-             <input id="Image" name="Image" class="form-control" type="file" multiple><span style="color:red;display: block;font-size: 70%;text-align: left">*文件、图片大小不大于1M</span></td>
+             <input id="Image" name="Image" class="form-control" type="file"  data-preview-file-type="text" accept=".png,.jpg,.gif,.txt,.zif," multiple><span style="color:red;display: block;font-size: 70%;text-align: left">*文件、图片大小不大于1M</span></td>
       </tr>
       <tr>
           <td colspan="4"><button class="btn btn-primary" type="submit">提交</button></td>

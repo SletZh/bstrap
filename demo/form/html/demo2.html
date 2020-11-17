@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../../css/bootstrap.min.css">
+    <script type="text/javascript" src="../../../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../../../js/bootstrap.js"></script>
+    <script type="text/javascript" src="../../../js/jquery.form.js"></script>
+    <script type="text/javascript" src="../../../demo/form/js/demo2.js"></script>
+    <title>表单的三种提交方式测试</title>
+</head>
+<body>
+<form id="testForm">
+    <div class="input-group">
+        <label>
+            userCode:
+        </label>
+        <input id="userCode" name="userCode" type="text"/>
+    </div>
+    <div class="input-group">
+        <label>
+            mobile:
+        </label>
+        <input id="mobile" name="mobile" type="text"/>
+    </div>
+    <div class="input-group">
+        <label>
+           附件:
+        </label>
+        <input id="file" name="file" type="file" multiple>
+    </div>
+    <div class="btn-group">
+        <button id="btn1" class="btn-primary" type="button">第一种提交</button>
+    </div>
+    <div class="btn-group">
+        <button id="btn2" class="btn-primary" type="button">第二种提交</button>
+    </div>
+    <div class="btn-group">
+        <button id="btn3" class="btn-primary" type="button">第三种提交</button>
+    </div>
+</form>
+</body>
+</html>

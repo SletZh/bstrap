@@ -10,50 +10,55 @@
     <script type="text/javascript" src="js/znkf.js"></script>
 </head>
 <body>
-    <div style="display: block; transform: translate3d(0px, 0px, 0px); left: 1180px; top: 210px; width: 44px; height: 175px; right: auto; bottom: auto; margin: 0px; position: absolute; cursor: move;">
-        <div class="contact_us">
-            <div class="contact_us_circle">
-                <span class="rainbow glyphicon glyphicon-earphone" onmouseover="open_contact_us_detail()"></span>
-            </div>
-            <div class="contact_us_note">
-                <span style="display: block">联系我们</span>
-            </div>
+<!--    <div style="display: block; transform: translate3d(0px, 0px, 0px); left: 1180px; top: 210px; width: 44px; height: 175px; right: auto; bottom: auto; margin: 0px; position: absolute; cursor: move;">-->
+<div id="contact_us" class="contact_us">
+    <div id="contact_us_header" class="contact_us_header">
+        <div class="contact_us_circle">
+            <span class="rainbow glyphicon glyphicon-earphone" onmouseover="open_contact_us_detail()"></span>
         </div>
-        <div id="contact_us_detail" class="contact_us_detail" onmouseleave="close_contact_us_detail()" hidden>
-            <div class="contact_us_title_wrap">
-                <span class="rainbow close"><a onclick="close_contact_us_detail()">&times;</a> </span>
-            </div>
-            <div class="contact_us_content">
-                <div id="contact_us_content1" style="background: rgb(255, 255, 255);" class="contact_us_content">
-                    <div class="icon">
-                        <span class="rainbow glyphicon glyphicon-earphone"></span>
+        <div class="contact_us_note">
+            <span style="display: block">联系我们</span>
+        </div>
+    </div>
+    <div id="contact_us_detail" class="contact_us_detail" onmouseleave="close_contact_us_detail()" hidden>
+        <div class="contact_us_title_wrap">
+            <span class="rainbow close"><a onclick="close_contact_us_detail()">&times;</a> </span>
+        </div>
+        <div class="contact_us_content">
+            <div id="contact_us_content1" style="background: rgb(255, 255, 255);" class="contact_us_content">
+                <div class="icon">
+                    <span class="rainbow glyphicon glyphicon-earphone"></span>
+                </div>
+                <div class="content">
+                    <div class="txt">热线电话</div>
+                    <div class="blue_txt">
+                        <div>021-68579099</div>
                     </div>
-                    <div class="content">
-                        <div class="txt">热线电话</div>
-                        <div class="blue_txt"><div>021-68579099</div></div>
-                        <div class="txt">工作日时间</div>
-                        <div class="time">
-                            <span style="padding-right: 20px;">上午&nbsp;8:30-12:00</span><span>下午&nbsp;13:30-19:00</span>
-                        </div>
-                        <div class="txt">非工作日时间</div>
-                        <div class="time">
-                            <span style="padding-right: 20px;">上午&nbsp;9:30-12:00</span><span>下午&nbsp;13:30-17:00</span>
-                        </div>
+                    <div class="txt">工作日时间</div>
+                    <div class="time">
+                        <span style="padding-right: 20px;">上午&nbsp;8:30-12:00</span><span>下午&nbsp;13:30-19:00</span>
+                    </div>
+                    <div class="txt">非工作日时间</div>
+                    <div class="time">
+                        <span style="padding-right: 20px;">上午&nbsp;9:30-12:00</span><span>下午&nbsp;13:30-17:00</span>
                     </div>
                 </div>
-                <div id="contact_us_content2" style="background: rgb(255, 255, 255);" class="contact_us_content">
-                    <div class="icon">
-                        <span class="rainbow glyphicon glyphicon-headphones"></span>
-                    </div>
+            </div>
+            <div id="contact_us_content2" style="background: rgb(255, 255, 255);" class="contact_us_content">
+                <div class="icon">
+                    <span class="rainbow glyphicon glyphicon-headphones"></span>
+                </div>
+                <div class="content">
                     <div class="content">
-                        <div class="content">
-                            <div class="txt"><a href="http://10.1.111.99:26193/ddbxIM/webchat.html?Q2hhbm5lbFR5cGU9d2ViY2hhdCZSb2xlPTImYXBwaWQ9SkRZSVRTdXBwb3J0JmRlcHQ9aHI=" target="_blank">在线客服</a></div>
-                            <div class="time">智能诊断, 秒级解答</div>
-                        </div>
+                        <div class="txt"><a
+                                href="http://10.1.111.99:26193/ddbxIM/webchat.html?Q2hhbm5lbFR5cGU9d2ViY2hhdCZSb2xlPTImYXBwaWQ9SkRZSVRTdXBwb3J0JmRlcHQ9aHI="
+                                target="_blank">在线客服</a></div>
+                        <div class="time">智能诊断, 秒级解答</div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
 </body>
 </html>
